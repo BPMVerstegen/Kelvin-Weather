@@ -1,0 +1,13 @@
+//todays constant forecast is 293 Kelvin
+const kelvin = 293;
+//to transfer Kelvin to Celsius we subtract 273
+const celsius = kelvin - 273;
+//to calculate fahrenheit we use the formula below
+let fahrenheit = celsius * (9 / 5) + 32;
+//because we divide fahrenheit by 9/5 we often get a decimal number, therefore we use Math.floor to round down the temperature
+fahrenheit = Math.floor(fahrenheit);
+
+//printing temperature values
+console.log(`The temperature is ${kelvin} degrees Kelvin`);
+console.log(`The temperature is ${celsius} degrees Celsius`);
+console.log(`The temperature is ${fahrenheit} degrees Fahrenheit`);
